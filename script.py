@@ -3,6 +3,7 @@ import pandas as pd
 import glob
 import os
 
+
 def main():
     """
     Set these accordingly for both yourself and the assignment.
@@ -14,7 +15,7 @@ def main():
 
     df = pd.read_csv(mark_csv_path)
     df.sort_values(primary_key, inplace=True)
-    br = Browser(browser='firefox')
+    br = Browser(browser="firefox")
     br.goto("https://docsdb.cs.ualberta.ca/")
 
     # Login to docsdb
@@ -59,6 +60,7 @@ def main():
     print("Please double check the marks before submission!")
     print("Press enter to continue.")
     input()
-    
+
+
 if __name__ == "__main__":
     main()
