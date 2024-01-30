@@ -1,0 +1,7 @@
+# Data Folders
+csv/*.csv
+pdf/*.pdf
+old_python_files/*.py
+
+# Gecko stuff
+geckodriver.log

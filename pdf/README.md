@@ -1,0 +1,1 @@
+This folder is where you should put any sensitive pdfs, such as student submissions.

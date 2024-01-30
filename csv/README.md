@@ -1,0 +1,1 @@
+This folder is where you should put the CSV containing marks.
