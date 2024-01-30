@@ -7,7 +7,7 @@ This system has only been tested using firefox. *In Theory* it should work with 
 
 
 1. Please create a virtual environment with this version of python or greater, and install the requisite libraries using the command `pip install -r requirements.txt` after activating your environment.
-2. You will also need to install the appropriate drivers to interact with the browser. Download them from (here)[https://www.selenium.dev/]
+2. You will also need to install the appropriate drivers to interact with the browser. Download them from [here](https://www.selenium.dev/)
 
 ## Usage
 Just run `python script.py` after performing the above preliminary steps.
