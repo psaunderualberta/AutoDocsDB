@@ -7,7 +7,7 @@ import os
 def main():
     """
     Set these accordingly for both yourself and the assignment.
-    The csv should be acquired from the main eClass page -> Grades -> Export
+    The csv should be acquired from the class' eClass page -> Grades -> Export
     """
     file_location = os.path.dirname(os.path.realpath(__file__))
     mark_csv_path = glob.glob(os.path.join(file_location, "csv", "*.csv"))[0]
@@ -38,7 +38,7 @@ def main():
     br.text_field(name="num").value = assignment_no
     br.button(value="Get List").click()
 
-    # Change to column in the CSV file containing the marks
+    # The column in the CSV file containing the marks
     assignment_name = "Assignment: Assignment 5 (due Mar 7) (Real)"
 
     # Input marks
