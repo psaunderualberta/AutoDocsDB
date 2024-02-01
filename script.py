@@ -11,9 +11,10 @@ def main():
     """
     file_location = os.path.dirname(os.path.realpath(__file__))
     mark_csv_path = glob.glob(os.path.join(file_location, "csv", "*.csv"))[0]
-    primary_key = "Student ID"  # 7 digit student ID
+    primary_key = "ID"  # 7 digit student ID
 
     df = pd.read_csv(mark_csv_path)
+    df.columns = df.columns.str.strip()
     df.sort_values(primary_key, inplace=True)
     br = Browser(browser="firefox")
     br.goto("https://docsdb.cs.ualberta.ca/")
@@ -30,9 +31,9 @@ def main():
     br.button(value="Run Form").click()
 
     # Get specific assignment
+    course_num = "204"  # Change this to the correct course number
     assignment_type = "Assignment"  # Change this to the correct assignment type
     assignment_no = "5"  # Change this to the correct assignment number
-    course_num = "204"  # Change this to the correct course number
     br.text_field(name="coursenum").value = course_num
     br.text_field(name="type").value = assignment_type
     br.text_field(name="num").value = assignment_no
